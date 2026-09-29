@@ -10,7 +10,7 @@ export const createApp = (options = {}) => {
     const app = express();
     // Middleware
     app.use(cors({
-        origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://localhost:3000'],
+        origin: true, // Automatically allow requested origin (useful for local dev and Vercel preview/production URLs)
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization', 'x-actor-role', 'x-actor-id', 'x-actor-name', 'x-facility-id'],
         credentials: true,
