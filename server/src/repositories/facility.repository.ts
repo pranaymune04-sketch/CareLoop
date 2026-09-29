@@ -1,5 +1,5 @@
-import { Facility } from '../types/index.js';
-import { seedFacilities } from '../data/seedFacilities.js';
+import { Facility } from '../types/index';
+import { seedFacilities } from '../data/seedFacilities';
 
 export interface IFacilityRepository {
   findById(id: string): Promise<Facility | null>;

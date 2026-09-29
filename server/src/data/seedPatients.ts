@@ -1,4 +1,4 @@
-import { Patient } from '../types/index.js';
+import { Patient } from '../types/index';
 
 export const seedPatients: Patient[] = [
   {

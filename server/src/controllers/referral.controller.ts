@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { ReferralService } from '../services/referral.service.js';
-import { ApiResponse } from '../types/api.js';
-import { Referral, ReferralStatus, ReferralPriority, ReferralType } from '../types/index.js';
+import { ReferralService } from '../services/referral.service';
+import { ApiResponse } from '../types/api';
+import { Referral, ReferralStatus, ReferralPriority, ReferralType } from '../types/index';
 
 export class ReferralController {
   constructor(private referralService: ReferralService) {}

@@ -1,4 +1,4 @@
-import { Facility } from '../types/index.js';
+import { Facility } from '../types/index';
 
 export const seedFacilities: Facility[] = [
   {

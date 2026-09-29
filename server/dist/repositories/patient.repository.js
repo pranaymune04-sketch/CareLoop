@@ -1,4 +1,4 @@
-import { seedPatients } from '../data/seedPatients.js';
+import { seedPatients } from '../data/seedPatients';
 export class InMemoryPatientRepository {
     patients = new Map();
     constructor(initialData = seedPatients) {

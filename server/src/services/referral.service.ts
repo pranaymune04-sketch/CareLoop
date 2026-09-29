@@ -2,7 +2,7 @@ import {
   Referral, 
   ReferralEvent, 
   ActorContext 
-} from '../types/index.js';
+} from '../types/index';
 import { 
   CreateReferralPayload, 
   AcceptSlotPayload, 
@@ -12,10 +12,10 @@ import {
   StartServicePayload, 
   CompleteServicePayload, 
   ReroutePayload 
-} from '../types/api.js';
-import { IReferralRepository, ReferralFilter } from '../repositories/referral.repository.js';
-import { IFacilityRepository } from '../repositories/facility.repository.js';
-import { IPatientRepository } from '../repositories/patient.repository.js';
+} from '../types/api';
+import { IReferralRepository, ReferralFilter } from '../repositories/referral.repository';
+import { IFacilityRepository } from '../repositories/facility.repository';
+import { IPatientRepository } from '../repositories/patient.repository';
 
 export class BusinessRuleError extends Error {
   public statusCode: number;

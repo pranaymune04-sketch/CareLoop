@@ -1,5 +1,5 @@
-import { Referral, ReferralEvent, ReferralStatus, ReferralPriority, ReferralType } from '../types/index.js';
-import { seedReferrals } from '../data/seedReferrals.js';
+import { Referral, ReferralEvent, ReferralStatus, ReferralPriority, ReferralType } from '../types/index';
+import { seedReferrals } from '../data/seedReferrals';
 
 export interface ReferralFilter {
   status?: ReferralStatus;

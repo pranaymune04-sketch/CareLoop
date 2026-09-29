@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ApiResponse } from '../types/api.js';
+import { ApiResponse } from '../types/api';
 
 export class HealthController {
   getHealth = (_req: Request, res: Response): void => {

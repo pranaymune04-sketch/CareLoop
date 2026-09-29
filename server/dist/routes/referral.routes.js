@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { ReferralController } from '../controllers/referral.controller.js';
-import { ReferralService } from '../services/referral.service.js';
+import { ReferralController } from '../controllers/referral.controller';
+import { ReferralService } from '../services/referral.service';
 export const createReferralRouter = (referralRepo, facilityRepo, patientRepo) => {
     const router = Router();
     const service = new ReferralService(referralRepo, facilityRepo, patientRepo);

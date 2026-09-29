@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { ApiResponse } from '../types/api.js';
-import { BusinessRuleError } from '../services/referral.service.js';
+import { ApiResponse } from '../types/api';
+import { BusinessRuleError } from '../services/referral.service';
 
 export const errorHandler = (
   err: unknown,

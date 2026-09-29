@@ -1,4 +1,4 @@
-import { Referral } from '../types/index.js';
+import { Referral } from '../types/index';
 
 export const seedReferrals: Referral[] = [
   {

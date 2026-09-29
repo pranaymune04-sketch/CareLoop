@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { createHealthRouter } from './health.routes.js';
-import { createReferralRouter } from './referral.routes.js';
-import { createFacilityRouter } from './facility.routes.js';
-import { createPatientRouter } from './patient.routes.js';
+import { createHealthRouter } from './health.routes';
+import { createReferralRouter } from './referral.routes';
+import { createFacilityRouter } from './facility.routes';
+import { createPatientRouter } from './patient.routes';
 export const createApiRouter = (repos) => {
     const apiRouter = Router();
     apiRouter.use(createHealthRouter());

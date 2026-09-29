@@ -1,11 +1,11 @@
 import express, { Express } from 'express';
 import cors from 'cors';
-import { createApiRouter, AppRepositories } from './routes/index.js';
-import { actorContextMiddleware } from './middleware/actorContext.js';
-import { errorHandler } from './middleware/errorHandler.js';
-import { InMemoryReferralRepository } from './repositories/referral.repository.js';
-import { InMemoryFacilityRepository } from './repositories/facility.repository.js';
-import { InMemoryPatientRepository } from './repositories/patient.repository.js';
+import { createApiRouter, AppRepositories } from './routes/index';
+import { actorContextMiddleware } from './middleware/actorContext';
+import { errorHandler } from './middleware/errorHandler';
+import { InMemoryReferralRepository } from './repositories/referral.repository';
+import { InMemoryFacilityRepository } from './repositories/facility.repository';
+import { InMemoryPatientRepository } from './repositories/patient.repository';
 
 export interface AppOptions {
   repositories?: Partial<AppRepositories>;
@@ -33,8 +33,10 @@ export const createApp = (options: AppOptions = {}): Express => {
     patientRepo: options.repositories?.patientRepo || new InMemoryPatientRepository(),
   };
 
-  // Mount API router
-  app.use('/api', createApiRouter(repositories));
+  // Mount API router for both /api prefix and root / (when rewritten by Vercel)
+  const apiRouter = createApiRouter(repositories);
+  app.use('/api', apiRouter);
+  app.use('/', apiRouter);
 
   // Fallback 404 handler for undefined API routes
   app.use('/api', (_req, res) => {

@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { ReferralController } from '../controllers/referral.controller.js';
-import { ReferralService } from '../services/referral.service.js';
-import { IReferralRepository } from '../repositories/referral.repository.js';
-import { IFacilityRepository } from '../repositories/facility.repository.js';
-import { IPatientRepository } from '../repositories/patient.repository.js';
+import { ReferralController } from '../controllers/referral.controller';
+import { ReferralService } from '../services/referral.service';
+import { IReferralRepository } from '../repositories/referral.repository';
+import { IFacilityRepository } from '../repositories/facility.repository';
+import { IPatientRepository } from '../repositories/patient.repository';
 
 export const createReferralRouter = (
   referralRepo: IReferralRepository,

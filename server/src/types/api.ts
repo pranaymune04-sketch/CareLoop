@@ -1,4 +1,4 @@
-import { ReferralType, ReferralPriority, Gender, HealthWorkerCadre, FacilityType } from './index.js';
+import { ReferralType, ReferralPriority, Gender, HealthWorkerCadre, FacilityType } from './index';
 
 export interface ApiResponse<T> {
   success: boolean;

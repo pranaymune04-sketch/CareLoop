@@ -1,4 +1,4 @@
-import { seedFacilities } from '../data/seedFacilities.js';
+import { seedFacilities } from '../data/seedFacilities';
 export class InMemoryFacilityRepository {
     facilities = new Map();
     constructor(initialData = seedFacilities) {

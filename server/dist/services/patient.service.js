@@ -1,4 +1,4 @@
-import { BusinessRuleError } from './referral.service.js';
+import { BusinessRuleError } from './referral.service';
 export class PatientService {
     patientRepo;
     constructor(patientRepo) {

@@ -1,4 +1,4 @@
-import { BusinessRuleError } from '../services/referral.service.js';
+import { BusinessRuleError } from '../services/referral.service';
 export const errorHandler = (err, _req, res, _next) => {
     const timestamp = new Date().toISOString();
     if (err instanceof BusinessRuleError) {

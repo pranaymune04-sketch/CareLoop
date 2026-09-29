@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { FacilityService } from '../services/facility.service.js';
-import { ApiResponse, MatchedFacilityResult } from '../types/api.js';
-import { Facility } from '../types/index.js';
+import { FacilityService } from '../services/facility.service';
+import { ApiResponse, MatchedFacilityResult } from '../types/api';
+import { Facility } from '../types/index';
 
 export class FacilityController {
   constructor(private facilityService: FacilityService) {}

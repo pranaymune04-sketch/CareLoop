@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { FacilityController } from '../controllers/facility.controller.js';
-import { FacilityService } from '../services/facility.service.js';
+import { FacilityController } from '../controllers/facility.controller';
+import { FacilityService } from '../services/facility.service';
 export const createFacilityRouter = (facilityRepo) => {
     const router = Router();
     const service = new FacilityService(facilityRepo);

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
-import { PatientService } from '../services/patient.service.js';
-import { ApiResponse } from '../types/api.js';
-import { Patient } from '../types/index.js';
+import { PatientService } from '../services/patient.service';
+import { ApiResponse } from '../types/api';
+import { Patient } from '../types/index';
 
 export class PatientController {
   constructor(private patientService: PatientService) {}

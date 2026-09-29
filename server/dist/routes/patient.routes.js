@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { PatientController } from '../controllers/patient.controller.js';
-import { PatientService } from '../services/patient.service.js';
+import { PatientController } from '../controllers/patient.controller';
+import { PatientService } from '../services/patient.service';
 export const createPatientRouter = (patientRepo) => {
     const router = Router();
     const service = new PatientService(patientRepo);

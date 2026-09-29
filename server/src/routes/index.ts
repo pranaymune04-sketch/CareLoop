@@ -1,11 +1,11 @@
 import { Router } from 'express';
-import { createHealthRouter } from './health.routes.js';
-import { createReferralRouter } from './referral.routes.js';
-import { createFacilityRouter } from './facility.routes.js';
-import { createPatientRouter } from './patient.routes.js';
-import { IReferralRepository } from '../repositories/referral.repository.js';
-import { IFacilityRepository } from '../repositories/facility.repository.js';
-import { IPatientRepository } from '../repositories/patient.repository.js';
+import { createHealthRouter } from './health.routes';
+import { createReferralRouter } from './referral.routes';
+import { createFacilityRouter } from './facility.routes';
+import { createPatientRouter } from './patient.routes';
+import { IReferralRepository } from '../repositories/referral.repository';
+import { IFacilityRepository } from '../repositories/facility.repository';
+import { IPatientRepository } from '../repositories/patient.repository';
 
 export interface AppRepositories {
   referralRepo: IReferralRepository;

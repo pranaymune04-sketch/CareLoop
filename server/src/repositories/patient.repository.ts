@@ -1,5 +1,5 @@
-import { Patient } from '../types/index.js';
-import { seedPatients } from '../data/seedPatients.js';
+import { Patient } from '../types/index';
+import { seedPatients } from '../data/seedPatients';
 
 export interface IPatientRepository {
   findById(id: string): Promise<Patient | null>;

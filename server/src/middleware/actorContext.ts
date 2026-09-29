@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { ActorContext, UserRole } from '../types/index.js';
+import { ActorContext, UserRole } from '../types/index';
 
 declare global {
   namespace Express {

@@ -1,4 +1,4 @@
-import { seedReferrals } from '../data/seedReferrals.js';
+import { seedReferrals } from '../data/seedReferrals';
 export class InMemoryReferralRepository {
     referrals = new Map();
     constructor(initialData = seedReferrals) {

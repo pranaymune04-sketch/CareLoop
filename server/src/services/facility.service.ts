@@ -1,7 +1,7 @@
-import { Facility } from '../types/index.js';
-import { SmartMatchCriteria, MatchedFacilityResult } from '../types/api.js';
-import { IFacilityRepository } from '../repositories/facility.repository.js';
-import { BusinessRuleError } from './referral.service.js';
+import { Facility } from '../types/index';
+import { SmartMatchCriteria, MatchedFacilityResult } from '../types/api';
+import { IFacilityRepository } from '../repositories/facility.repository';
+import { BusinessRuleError } from './referral.service';
 
 export class FacilityService {
   constructor(private facilityRepo: IFacilityRepository) {}
